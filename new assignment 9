@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> Math.num Method</h2>
+<p>Math.round() rounds a number to the nearest integer:</p>
+<script>
+      //  output: 1
+      console.log(Math.round(0.9));
+
+      //  output: 2
+console.log(Math.round(5.95), Math.round(5.5), Math.round(5.05));
+
+//  output: 3
+console.log(Math.round(-5.05), Math.round(-5.5), Math.round(-5.95));
+
+// Function to generate random number
+function randomNumber(min, max) {
+	return Math.random() * (max - min) + min;
+}
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+//output1
+console.log(getRandomInt(3));
+//output 2
+console.log(getRandomInt(1));
+//output 3
+console.log(Math.random());
+
+
+// output 1
+console.log(Math.trunc(13.37));
+
+// output 2
+console.log(Math.trunc(42.84));
+
+function financial(x) {
+  return Number.parseFloat(x).toFixed(2);
+}
+//output1
+console.log(financial(123.456));
+
+//output2
+console.log(financial(0.004));
+
+//output3
+console.log(financial('1.23e+5'));
+
+
+</script>    
+</body>
+</html>
